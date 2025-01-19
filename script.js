@@ -4,7 +4,7 @@ const allusersHtml = document.getElementById("allusers");
 const localVideo = document.getElementById("localVideo");
 const remoteVideo = document.getElementById("remoteVideo");
 
-const socket = io("http://localhost:8000");
+const socket = io("https://t2-ejgl.onrender.com");
 let localStream;
 let caller = [];
 
