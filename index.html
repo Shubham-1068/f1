@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h-screen w-screen flex">
+        <div id="allusers" class="h-full w-1/4 border-2 border-red-500"></div>
+        <div class="h-full w-3/4 border-2 border-green-500">
+            <input type="text" name="username" id="username">
+            <button id="create-user" class="bg-blue-500">Create User</button>
+            <div class="w-1/2 h-1/2">
+                <video id="localVideo" autoplay muted></video>
+            </div>
+            <div class="w-1/2 h-1/2">
+                <video id="remoteVideo" autoplay muted></video>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+    integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+    crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+</html>
